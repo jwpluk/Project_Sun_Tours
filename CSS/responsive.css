@@ -1,0 +1,40 @@
+/* max 900px (tablets) */
+@media only screen
+and (max-width: 900px){
+    body{
+        max-width: 900px;
+        overflow: scroll;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    main{
+        background-color: #97D0AC;
+    }
+    iframe{
+        width: 266;
+        height: 150;
+    }
+
+@media only screen
+and (max-width 600px){
+    body{
+        max-width: 600px;
+        overflow: scroll;
+    }
+    iframe{
+        width: 266;
+        height: 150;
+    }
+    
+ 
+@media only screen
+and (max-width 480px){
+    body{
+        max-width: 480px;
+        overflow: scroll;
+    } 
+    iframe{
+        width: 266;
+        height: 150;
+    }
