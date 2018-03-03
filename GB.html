@@ -29,9 +29,55 @@
                         </div>
                 </div>
         </nav>
-        <!-- End nav bar & Start content -->
-        ...
-        <!-- End content & start footer -->
+        <!-- End nav bar & Start form -->
+        <form name="Contact"
+              id="gas"
+              action = "mailto: gardevoured@gmail.com"
+              method = "post">
+            <fieldset>
+                <legend>Gastenboek</legend>
+                
+                <legend>Voornaam:</legend>
+                <input required type="text" id="voornaam" name="voornaam" placeholder="Voornaam"><br>
+                <legend>Achternaam:</legend>
+                <input required type="text" id="achternaam" name="achternaam" placeholder="Achternaam"><br>
+                <legend>Email:</legend>
+                <input required type="text" id="email" name="email" placeholder="Email"><br>
+                <legend>Telefoonnr:</legend>
+                <input required type="text" id="tel" name="tel" placeholder="Telefoonnr"><br>
+                
+                <legend>Welke bestemming hebt u bezocht?</legend>
+                <input required type="text" placeholder="Bestemming" name="best" id="best" list="land">
+                    <datalist id="land">
+                        <option value="Aruba"></option>
+                        <option value="Curaçao"></option>
+                        <option value="Finland"></option>
+                        <option value="Japan"></option>
+                        <option value="Nieuw Zeeland"></option>
+                        <option value="Canada"></option>
+                    </datalist><br><br>
+                
+                <label for="geslacht">Heeft u een auto bij ons gehuurt?</label><br>
+                    Ja <input type="radio" name="waggy" value="T">
+                    Nee <input type="radio" name="waggy" value="f"><br><br>
+                
+                <legend>Welk onderdeel zou u een kennis het meeste aanraden?</legend>
+                <input type="checkbox" name="actie" id="actie" value="actie"> De acties<br>
+                <input type="checkbox" name="aanbod" id="aanbod" value="aanbod"> Het aanbod<br>
+                <input type="checkbox" name="vt" id="vt" value="vt"> Het boeken van de vliegtickets<br>
+                <input type="checkbox" name="av" id="av" value="av"> Het autoverhuur<br><br>
+                
+                <label for="ranking">Welke cijfer zou u het bedrijf en de service geven?</label><br>
+                    1 <input type="range" name="ranking" id="ranking" min="1" max="10"> 10<br><br>
+                
+                <legend>Overige opmerkingen</legend>
+                <textarea rows="5" cols="40" placeholder="Schrijf een commentaar..."></textarea><br>
+                
+                <input type="submit" id="verzend" name="verzend" value="Verzend">
+                <input type="submit" id="cancel" name="cancel" value="Cancel">
+            </fieldset>
+        </form>
+        <!-- End form & start footer -->
         <footer>
             <img src="CSS/Images/dwitter.png">
             <img src="CSS/Images/redtube.png">
