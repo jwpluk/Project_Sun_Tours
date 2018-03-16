@@ -12,14 +12,7 @@
         <!-- Start nav bar -->
         <nav>
             <div id="txt"></div>
-            <form onsubmit="confirmInput()">
-                <!-- Login container -->
-                <div class="containerlogin">
-                    <input id="fname" type="text" placeholder="Enter Username" name="username" required> 
-                    <button type="submit">Login</button>
-                </div>
-                <!-- End login container -->
-            </form>
+            <img src="CSS/Images/SunLogo2.jpg">
                 <div class="dropdown">
                     <span><ul><li><h4>Menu</h4></li></ul></span>
                         <div class="dropdown-content">
@@ -34,6 +27,14 @@
                                 </ul>
                         </div>
                 </div>
+            <form onsubmit="confirmInput()">
+                <!-- Login container -->
+                <div class="containerlogin">
+                    <input id="fname" type="text" placeholder="Enter Username" name="username" required> 
+                    <button type="submit">Login</button>
+                </div>
+                <!-- End login container -->
+            </form>
         </nav>
         <!-- End nav bar & Start content -->
         <div id="text1">
@@ -60,6 +61,45 @@
 
         <p>Contact pagina:
             Een pagina die de mogelijkheid biedt om contact met mij op te nemen.</p>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th> Dagen </th>
+                    <th>&nbsp; Openingstijd </th>
+                    <th>&nbsp; Sluitingstijd </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maandag t/m Vrijdag</td>
+                    <td>08:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Zaterdag</td>
+                    <td>09:00</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td>Zondag</td>
+                    <td>10:00</td>
+                    <td>15:00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="tabs">
+        <div class="tab" id="tab1" onclick="document.getElementById('card1').style.display='block'; document.getElementById('card2').style.display='none'; document.getElementById('card3').style.display='none';">Bedrijfsnieuws</div>
+        </div>    
+            
+        <div class="cards" id="card1" style="display: none;">
+            <div class="content-left">
+                Nieuw initiatief
+                <div class="x-icon" onclick="document.getElementById('card1').style.display='none';">x</div>
+            </div>
+            <div class="content-right">Roadtrip Scandinavië</div>
         </div>
         <!-- End content & start footer -->
         <footer>
