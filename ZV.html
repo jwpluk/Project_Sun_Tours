@@ -12,6 +12,7 @@
         <!-- Start nav bar -->
         <nav>
             <div id="txt"></div>
+            <img src="CSS/Images/SunLogo2.jpg">
             <form onsubmit="confirmInput()">
             </form>
                 <div class="dropdown">
@@ -30,7 +31,56 @@
                 </div>
         </nav>
         <!-- End nav bar & Start content -->
-        ...
+        <div class="tabs">
+            <div class="tab" id="tab4" onclick="document.getElementById('card4').style.display='block';
+            document.getElementById('card2').style.display='none';
+            document.getElementById('card3').style.display='none';">
+            Barcelona
+            </div>
+            <div class="tab" id="tab2" onclick="document.getElementById('card4').style.display='none';
+            document.getElementById('card2').style.display='block';
+            document.getelementbyid('card3').style.display='none';">
+            Auckland
+            </div>
+            <div class="tab" id="tab3" onclick="document.getElementById('card4').style.display='none';
+            document.getElementById('card2').style.display='none';
+            document.getElementById('card3').style.display='block';">
+            Syndney
+            </div>
+            <div class="tab" id="tab5" onclick="document.getElementById('card5').style.display='none';
+            document.getElementById('card2').style.display='none';
+            document.getElementById('card3').style.display='block';">
+            San Fransisco
+            </div>
+        </div>
+        <div class="cards" id="card4" style="display: none;">
+            <div class="content-left">
+                Card 1
+                <div class="x-icon" onclick="document.getElementById('card4').style.display='none';">x</div>
+            </div>
+            <div class="content-right"> Content 1 </div>
+        </div>
+        <div class="cards" id="card2" style="display: none;">
+            <div class="content-left">
+            Card 2
+                <div class="x-icon" onclick="document.getElementById('card2').style.display='none';">x</div>
+            </div>
+            <div class="content-right"> Content 2 </div>
+        </div>
+        <div class="cards" id="card3" style="display: none;">
+            <div class="content-left">
+            Card 3
+                <div class="x-icon" onclick="document.getElementById('card3').style.display='none';">x</div>
+            </div>
+            <div class="content-right"> Content 3 </div>
+        </div>
+        <div class="cards" id="card5" style="display: none;">
+            <div class="content-left">
+            Card 3
+                <div class="x-icon" onclick="document.getElementById('card5').style.display='none';">x</div>
+            </div>
+            <div class="content-right"> Content 5 </div>
+        </div>
         <!-- End content & start footer -->
         <footer>
             <img src="CSS/Images/dwitter.png">
