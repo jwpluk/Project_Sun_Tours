@@ -110,12 +110,21 @@ input[type=text]{
 }
 
 button {
-    background-color: #818181;
+    background: #818181;
     color: white;
     border: none;
     cursor: pointer;
     width: 25%;
     color: black;
+}
+
+table{
+    color: black;
+}
+
+table td{
+    border: 5px double;
+    text-align: center;
 }
 
 button:hover {
@@ -125,4 +134,15 @@ button:hover {
 form{
     float: right;
 }
-
+/* Zomervakantie */
+/* Wintersport-Ski vakantie
+/* Vliegtickets */
+/* Autoverhuur */
+/* Gastenboek */
+/* Contact */
+form{
+    float: left;
+}
+#blob{
+    float: right;
+}
