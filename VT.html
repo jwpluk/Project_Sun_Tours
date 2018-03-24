@@ -31,7 +31,26 @@
                 </div>
         </nav>
         <!-- End nav bar & Start content -->
-        ...
+        <div id="datum">   
+            <h3>Boek hier uw Vliegticket</h3>
+
+            <input type="date" id="myDate" value="3-24-2018">
+
+            <p>Druk op de volgende knop om uw boeking te voltooien</p>
+
+            <button onclick="myFunction()">boeken</button>
+
+            <p>U hebt geboekt op de volgende datum:</p>
+
+            <p id="date"></p>
+
+            <script>
+                function myFunction() {
+                var x = document.getElementById("myDate").value;
+                document.getElementById("date").innerHTML = x;
+                }
+            </script>
+        </div>
         <!-- End content & start footer -->
         <footer>
             <img src="CSS/Images/dwitter.png">

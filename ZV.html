@@ -32,54 +32,84 @@
         </nav>
         <!-- End nav bar & Start content -->
         <div class="tabs">
-            <div class="tab" id="tab4" onclick="document.getElementById('card4').style.display='block';
+            <div class="tab" id="tab1" onclick="document.getElementById('card1').style.display='block';
             document.getElementById('card2').style.display='none';
-            document.getElementById('card3').style.display='none';">
-            Barcelona
+            document.getElementById('card3').style.display='none';
+            document.getElementById('card4').style.display='none';">
+            San Francisco ( USA )
             </div>
-            <div class="tab" id="tab2" onclick="document.getElementById('card4').style.display='none';
+            <div class="tab" id="tab2" onclick="document.getElementById('card1').style.display='none';
             document.getElementById('card2').style.display='block';
-            document.getelementbyid('card3').style.display='none';">
-            Auckland
+            document.getelementbyid('card3').style.display='none';
+            document.getElementById('card4').style.display='none';">
+            Honolulu ( Hawaii, USA )
             </div>
-            <div class="tab" id="tab3" onclick="document.getElementById('card4').style.display='none';
+            <div class="tab" id="tab3" onclick="document.getElementById('card1').style.display='none';
             document.getElementById('card2').style.display='none';
-            document.getElementById('card3').style.display='block';">
-            Syndney
+            document.getElementById('card3').style.display='block';
+            document.getElementById('card4').style.display='none';">
+            Suva ( Fiji )
             </div>
-            <div class="tab" id="tab5" onclick="document.getElementById('card5').style.display='none';
+            <div class="tab" id="tab4" onclick="document.getElementById('card1').style.display='none';
             document.getElementById('card2').style.display='none';
-            document.getElementById('card3').style.display='block';">
-            San Fransisco
+            document.getElementById('card3').style.display='none';
+            document.getElementById('card4').style.display='block';">
+            Sydney ( Australië )
+            </div>
+        </div>
+        <div class="cards" id="card1" style="display: none;">
+            <div class="content-left">
+                <div class="x-icon" onclick="document.getElementById('card1').style.display='none';">x</div>
+                <img id="img3" src="CSS/Images/San-Francisco3.jpg" alt="san-francisco3">
+            </div>
+            <div class="content-right"> Welcome to San Francisco!<br>
+                San Francisco is home to a little bit of everything. <br>Whether you’re a first time visitor or a long-time local, <br>San Francisco's Golden Gates welcome all.
+            
+            <iframe id="iframe1" width="270" height="235" src="https://www.youtube.com/embed/u4ES55FijXQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <img id="img1" src="CSS/Images/San-Francisco-1.jpg" alt="san-francisco1">
+            <img id="img2" src="CSS/Images/San-Francisco2.jpg" alt="san-francisco2">    
+            </div>
+        </div>
+        <div class="cards" id="card2" style="display: none;">
+            <div class="content-left">
+                <div class="x-icon" onclick="document.getElementById('card2').style.display='none';">x</div>
+                <img id="img6" src="CSS/Images/honolulu3.jpg">
+            </div>
+            <div class="content-right"> Honolulu
+                The state capital and largest city in Hawaii, <br>Honolulu is a unique combination of tropical glamour <br>and buzzing international metropolis, <br>where sandy shores meet city streets.
+                
+                <iframe id="iframe2" width="270" height="235" src="https://www.youtube.com/embed/wfJUf33rBsQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+                <img id="img4" src="CSS/Images/Honolulu1.jpg">
+                <img id="img5" src="CSS/Images/honolulu2.jpg">
+            </div>
+        </div>
+        <div class="cards" id="card3" style="display: none;">
+            <div class="content-left">
+                <div class="x-icon" onclick="document.getElementById('card3').style.display='none';">x</div>
+                <img id="img9" src="CSS/Images/suva3.jpg">
+            </div>
+            <div class="content-right"> Archaeological findings dating back 3500 years <br>as well as cultural objects reflecting Fiji's<br>inhabitants during the past 100 years are <br>housed in the oldest museum in the South Pacific. <br>Our museum is located in Suva the capital of Fiji. 
+                <iframe id="iframe3" width="270" height="235" src="https://www.youtube.com/embed/AEpRKkD-ivY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+                <img id="img7" src="CSS/Images/Suva1.jpg">
+                <img id="img8" src="CSS/Images/suva2.jpg">
             </div>
         </div>
         <div class="cards" id="card4" style="display: none;">
             <div class="content-left">
-                Card 1
                 <div class="x-icon" onclick="document.getElementById('card4').style.display='none';">x</div>
+                <img id="img12" src="CSS/Images/sydney3.jpg">
             </div>
-            <div class="content-right"> Content 1 </div>
-        </div>
-        <div class="cards" id="card2" style="display: none;">
-            <div class="content-left">
-            Card 2
-                <div class="x-icon" onclick="document.getElementById('card2').style.display='none';">x</div>
+            <div class="content-right"> 
+                Sydney offers plenty of historical and contemporary Australian flavor. The marvelous Sydney Opera House looks like a great origami sailboat, floating peacefully in a harbor. Wander the narrow cobblestone streets of The Rocks and then take in a street performance on the Circular Quay before heading into the Museum of Contemporary Art. The views from the Sydney Tower Eye observatory are epic – use this chance to get to know the layout of the city from high above.
+                
+                <iframe id="iframe4" width="270" height="235" src="https://www.youtube.com/embed/yL5IWQGQ4_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+            
+                <img id="img10" src="CSS/Images/Sydney1.jpg">
+                <img id="img11" src="CSS/Images/sydney2.jpg">
             </div>
-            <div class="content-right"> Content 2 </div>
-        </div>
-        <div class="cards" id="card3" style="display: none;">
-            <div class="content-left">
-            Card 3
-                <div class="x-icon" onclick="document.getElementById('card3').style.display='none';">x</div>
-            </div>
-            <div class="content-right"> Content 3 </div>
-        </div>
-        <div class="cards" id="card5" style="display: none;">
-            <div class="content-left">
-            Card 3
-                <div class="x-icon" onclick="document.getElementById('card5').style.display='none';">x</div>
-            </div>
-            <div class="content-right"> Content 5 </div>
         </div>
         <!-- End content & start footer -->
         <footer>

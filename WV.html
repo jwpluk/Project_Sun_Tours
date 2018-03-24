@@ -31,7 +31,89 @@
                 </div>
         </nav>
         <!-- End nav bar & Start content -->
-        ...
+        <div class="tabs">
+            <div class="tab" id="tab1" onclick="document.getElementById('card1').style.display='block';
+            document.getElementById('card2').style.display='none';
+            document.getElementById('card3').style.display='none';
+            document.getElementById('card4').style.display='none'">
+            Roadtrip door Scandinavië
+            </div>
+            <div class="tab" id="tab2" onclick="document.getElementById('card1').style.display='none';
+            document.getElementById('card2').style.display='block';
+            document.getelementbyid('card3').style.display='none';
+            document.getElementById('card4').style.display='none';">
+            Reykjavik ( Iceland )
+            </div>
+            <div class="tab" id="tab3" onclick="document.getElementById('card1').style.display='none';
+            document.getElementById('card2').style.display='none';
+            document.getElementById('card3').style.display='block';
+            document.getElementById('card4').style.display='none';">
+            Oslo ( Norway )
+            </div>
+            <div class="tab" id="tab4" onclick="document.getElementById('card1').style.display='none';
+            document.getElementById('card2').style.display='none';
+            document.getElementById('card3').style.display='none';
+            document.getElementById('card4').style.display='block';">
+            Helsinki ( Finland )
+            </div>
+        </div>
+        <div class="cards" id="card1" style="display: none;">
+            <div class="content-left">
+                <div class="x-icon" onclick="document.getElementById('card1').style.display='none';">x</div>
+                <img id="img15" src="CSS/Images/roadtrip3.jpg">
+            </div>
+            <div class="content-right"> 
+                you want to travel trough the mountains of Norway <br>along the coastline of sweden and trough the forests of Finland. <br>Book than now a roadtrip to Scandinavia
+                
+                <iframe id="iframe5" width="270" height="235" src="https://www.youtube.com/embed/YJPgoOCOBFg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+                
+                <img id="img13" src="CSS/Images/roadtrip1.jpeg">
+                <img id="img14" src="CSS/Images/roadtrip2.jpg">
+            </div>
+        </div>
+        <div class="cards" id="card2" style="display: none;">
+            <div class="content-left">
+                <div class="x-icon" onclick="document.getElementById('card2').style.display='none';">x</div>
+                <img id="img18" src="CSS/Images/Reykjavik3.jpg">
+            </div>
+            <div class="content-right"> 
+                Sprawling Reykjavík, the nation's nerve center and government seat, <br>is home to half the island's population. On a bay overlooked by <br>proud Mt.Esja (pronounced eh-shyuh), with its ever-changing hues
+                
+                <iframe id="iframe6" width="270" height="235" src="https://www.youtube.com/embed/oXI9zqektco" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+            
+                <img id="img16" src="CSS/Images/reykjavik1.jpg">
+                <img id="img17" src="CSS/Images/reykjavik2.jpg">
+            </div>
+        </div>
+        <div class="cards" id="card3" style="display: none;">
+            <div class="content-left">
+            <div class="x-icon" onclick="document.getElementById('card3').style.display='none';">x</div>
+                <img id="img21" src="CSS/Images/oslo3.jpg">
+            </div>
+            <div class="content-right">
+                
+                Surrounded by mountains and the sea, this compact, cultured, <br>caring and fun city is Europe's fastest-growing capital, <br>with a palpable sense of reinvention.
+                
+                <iframe id="iframe7" width="270" height="235" src="https://www.youtube.com/embed/lIXInmiMt0o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                
+                <img id="img19" src="CSS/Images/oslo1.jpg">
+                <img id="img20" src="CSS/Images/oslo2.jpg">
+            </div>
+        </div>
+        <div class="cards" id="card4" style="display: none;">
+            <div class="content-left">
+                <div class="x-icon" onclick="document.getElementById('card4').style.display='none';">x</div>
+                <img id="img24" src="CSS/Images/helsinki3.jpg">
+            </div>
+            <div class="content-right"> 
+                cosmopolitan city of Helsinki is the World Design Capital for 2012. <br>The beauty of the surrounding nature blends seamlessly with <br>high-tech achievements and contemporary trends.
+                
+                <iframe id="iframe8" width="270" height="235" src="https://www.youtube.com/embed/hJ10r4Wr5kk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+            
+                <img id="img22" src="CSS/Images/helsinki1.jpg">
+                <img id="img23" src="CSS/Images/helsinki2.jpg">
+            </div>
+        </div>
         <!-- End content & start footer -->
         <footer>
             <img src="CSS/Images/dwitter.png">

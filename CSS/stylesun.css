@@ -6,7 +6,8 @@ html{
 
 body{
     width: 90%;
-    background-color: aliceblue;
+    background-image: url(Images/nz.jpg);
+    background-size: 90%;
     background-position: center;
     background-repeat: repeat-y;
     overflow: scroll;
@@ -124,9 +125,6 @@ button {
 
 table{
     color: black;
-}
-
-table td{
     border: 5px double;
 }
 
@@ -213,6 +211,10 @@ nav form{
     background-color: #F4DB33;
 }
 
+#card1 a{
+    color: blue;
+}
+
 @keyframes zoomIn{
     0%{
         opacity: 0;
@@ -242,8 +244,357 @@ nav form{
 }
 
 /* Zomervakantie */
-/* Wintersport-Ski vakantie
+.tabs {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+.tab {
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    height: 50px;
+    line-height: 48px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.tab:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#tab1{
+    background-color: #f4db33;
+}
+#tab2{
+    background-color: #972ff8;
+}
+#tab3{
+    background-color: #dc3c84;
+}
+#tab4{
+    background-color: #972;
+}
+
+/* cards */
+.cards {
+    position: relative;
+    top: 150px;
+    left: 60px;
+    height: 300px;
+    width: 80%;
+    border-radius: 4px;
+    text-align: start;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.content-left{
+    float: left;
+    width: 22%;
+    height: 300px;
+    padding: 15px;
+    text-align: center;
+}
+.content-right{
+    padding-top: 15px;
+    padding-left: 15px;
+    float: right;
+    width: 60%;
+    height: 300px;
+}
+.x-icon{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 2.5em;
+    background-color: #70c26f;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.x-icon:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+#card1 .content-left{
+    background-color: #f4db33;
+}
+#card2 .content-left{
+    background-color: #972ff8;
+}
+#card3 .content-left{
+    background-color: #dc3c84;
+}
+#card4 .content-left{
+    background-color: #dc3;
+}
+
+@keyframes zoomIn {
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    
+    50%{
+        opacity: 0.5;
+    }
+}
+.cards{
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-animation-name: zoomIn;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+}
+#iframe1{
+    float: right;
+    margin-top: -2%;
+}
+
+#img1{
+    width: 55%;
+    height: 28%
+}
+#img2{
+    width: 55%;
+    height: 39%
+}
+#img3{
+    width: 100%;    
+}
+#iframe2{
+    float: right; 
+}
+#img4{
+    height: 49%;
+    float: left;
+}
+#img5{
+  height: 49%;
+  float: right;
+}
+#img6{
+    width: 95%;
+}
+#iframe3{
+    float: right;
+    margin-top: -5.5%;
+}
+#img7{
+    width: 30%;
+}
+#img8{
+    width: 30%;
+    height: 53%;
+}
+#img9{
+    width: 95%;
+    height: 50%;
+}
+#iframe4{
+    float: right;
+}
+#img10{
+    width: 30%;
+}
+#img11{
+    width: 30%;
+    height: 48%;
+}
+#img12{
+    width: 95%;
+}
+
+/* Wintersport-Ski vakantie */
+.tabs {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+.tab {
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    height: 50px;
+    line-height: 48px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.tab:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#tab1{
+    background-color: #f4db33;
+}
+#tab2{
+    background-color: #972ff8;
+}
+#tab3{
+    background-color: #dc3c84;
+}
+#tab4{
+    background-color: #972;
+}
+
+/* cards */
+.cards {
+    position: relative;
+    top: 150px;
+    left: 60px;
+    height: 300px;
+    width: 70%;
+    border-radius: 4px;
+    text-align: start;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.content-left{
+    float: left;
+    width: 22%;
+    height: 300px;
+    padding: 15px;
+    text-align: center;
+}
+.content-right{
+    padding-top: 5px;
+    padding-left: 15px;
+    float: left;
+    width: 60%;
+    height: 300px;
+    
+}
+.x-icon{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 2.5em;
+    background-color: #70c26f;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.x-icon:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+#card1 .content-left{
+    background-color: #f4db33;
+}
+#card2 .content-left{
+    background-color: #972ff8;
+}
+#card3 .content-left{
+    background-color: #dc3c84;
+}
+#card4 .content-left{
+    background-color: #dc3;
+}
+
+@keyframes zoomIn {
+    0%{
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    
+    50%{
+        opacity: 0.5;
+    }
+}
+.cards{
+    animation-name: zoomIn;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    
+    -webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    
+    -moz-animation-name: zoomIn;
+    -moz-animation-duration: 0.6s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+}
+
+#iframe5{
+    float: right;
+}
+#img13{
+    width: 30%;
+}
+#img14{
+    width: 30%;
+    height: 54%;
+}
+#img15{
+    width: 90%;
+}
+#iframe6{
+    float: right;
+}
+#img16{
+    width: 30%;
+}
+#img17{
+    width: 30%;
+}
+#img18{
+    width: 95%;
+}
+#img19{
+    width: 30%;
+}
+#img20{
+    width: 30%;
+    height: 40%
+}
+#img21{
+    width: 95%;
+}
+#iframe7{
+    float: right;
+}
+#iframe8{
+    float: right;
+}
+#img22{
+    width: 30%;
+    height: 54%;
+}
+#img23{
+    width: 30%;
+}
+#img24{
+    width: 95%;
+}
 /* Vliegtickets */
+#datum{
+    background-color: lightgrey;
+    width: 15%;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+    margin-left: 40%;
+    margin-top: 15%;
+}
 /* Autoverhuur */
 /* Gastenboek */
 /* Contact */
